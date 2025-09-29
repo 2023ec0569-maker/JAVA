@@ -1,20 +1,34 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args){
-        System.out.println("hello world");
-        Scanner input= new Scanner(System.in);
-        System.out.println(input.nextInt());
-       int rollno =23;
-//        char letteer ='f';
-//        float marks = 98.67f;
-//        double largedecimalnumber=232352325.345243;
-//        long largeInteger  = 3434135234238771244L;
-        boolean check =false;
+public class Main    {
+    public static void main(String[] args) {
+        int ans = sum3(12,8);
+        System.out.println(ans);
 
+    }
+    static int sum3(int a,int b){
+        int sum = a+b ;
+        return sum;
+    }
+    // return aa value
+    static int sum2(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter number 1 :");
+        int num1 = in.nextInt();
+        System.out.println("enter the number 2 :");
+        int num2 = in.nextInt();
+        int sum = num1+num2;
+        return sum;
+    }
+
+    static void sum(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter number 1 :");
+        int num1 = in.nextInt();
+        System.out.println("enter the number 2 :");
+        int num2 = in.nextInt();
+        int sum = num1+num2;
+        System.out.println("The sum " +sum);
 
     }
 }
